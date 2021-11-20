@@ -1,5 +1,6 @@
 var express = require("express");
 var path = require("path");
+var port = process.env.PORT || 8000 ;
 var app  = express();
 // to use partials we have to include hbs module
 var hbs = require("hbs");
@@ -22,4 +23,4 @@ app.get("*",(req,res)=>{
         message : "Http - Request not found..."
     });
 });
-app.listen(8000);
+app.listen(port);
