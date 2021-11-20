@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>This is Express Js</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+        <style>
+            .fa-snowflake{
+                widht:20px;
+                transition: all linear;
+                animation: rot 2s infinite;
+                color: brown;
+            }
+            .my_img{
+                widht:20px;
+                transition: all linear;
+                animation: rot 4s ;
+                
+           
+            }
+            @keyframes rot{
+                0%{
+                    transform: rotate(0deg);
+                }
+                 80%{
+                    transform: rotate(360deg);
+                   
+                }
+                100%{
+                     margin-left: 100px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+   {{>bhagya}}
+
+       <h1>This is testing the Express Application</h1>
+       <button onclick="refreshpage()">Next<sup>2</sup></button>
+     <i class="fas fa-snowflake"></i>
+     <img src="{{{ip}}}" class="my_img" />
+    
+    </body>
+</html>
