@@ -5,11 +5,13 @@ var app  = express();
 // to use partials we have to include hbs module
 var hbs = require("hbs");
 var main = require("./src/index");
-console.log();
+
+var staticPath = path.join(__dirname,"./public");
+app.use(express.static(staticPath));
 // setting the view engine
 app.set("views",path.join(__dirname,"./templates/views"));
 app.set("view engine","hbs");
-// app.set();
+
 // registering the partials
  hbs.registerPartials(path.join(__dirname,"./templates/partials"));
 

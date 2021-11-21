@@ -1,0 +1,7 @@
+ .main_nav{
+     background : black !important;
+ }
+ .main_nav a{
+     text-decoration: none !important;
+     color:white ;
+ }

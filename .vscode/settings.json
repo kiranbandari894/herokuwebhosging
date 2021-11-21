@@ -1,0 +1,7 @@
+{
+    "html.format.indentInnerHtml": true,
+    "html.format.indentHandlebars": true,
+    "html.format.templating": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "debug.javascript.autoAttachFilter": "always"
+}
