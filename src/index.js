@@ -12,9 +12,15 @@ router.get("/",(req,res)=>{
     
 });
 router.get("/about",function(req,res){
-    
+    res.render("about");
+});
+router.get("/programm",function(req,res){
+    res.render("programm");
 });
 
+router.get("/projects",function(req,res){
+    res.render("projects");
+});
 router.post("/cars",async (req,res)=>{
     const result = await db.createCar(req.body);
     res.status(201).json({id : result[0]});
