@@ -8,12 +8,11 @@ router.use(bodyparser.urlencoded({extended : false}));
 router.use(bodyparser.json());
 
 router.get("/",(req,res)=>{
-   requests("https://dog.ceo/api/breeds/image/random").on("data",(chunk)=>{
-        var objdata = JSON.parse(chunk);
-        // console.log(objdata.messag);
-        res.render("index.hbs",{title:"This is testing the hbs",ip:objdata.message});
-    });
 
+
+});
+router.get("/about",function(req,res){
+    
 });
 
 router.post("/cars",async (req,res)=>{

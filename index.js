@@ -16,7 +16,7 @@ app.set("view engine","hbs");
  hbs.registerPartials(path.join(__dirname,"./templates/partials"));
 
 app.use("/",main);
-app.get("/views",require('./src/middleware.js'));
+
 
 
 app.get("*",(req,res)=>{
