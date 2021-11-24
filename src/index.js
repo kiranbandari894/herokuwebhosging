@@ -8,8 +8,8 @@ router.use(bodyparser.urlencoded({extended : false}));
 router.use(bodyparser.json());
 
 router.get("/",(req,res)=>{
-
-
+   res.render("index");
+    
 });
 router.get("/about",function(req,res){
     
