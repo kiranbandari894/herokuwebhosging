@@ -14,3 +14,9 @@
      width: 100%;
      height: 50vh !important;
  }
+ @media (max-width:764px){
+    .carousel-item img{
+        width: 100%;
+        height: 25vh !important;
+    }   
+ }
